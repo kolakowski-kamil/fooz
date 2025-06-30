@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "templateParts": [
+    {
+      "name": "header",
+      "file": "parts/header.html"
+    },
+    {
+      "name": "footer",
+      "file": "parts/footer.html"
+    }
+  ],
+  "templates": {
+    "single-books": "templates/single-books.html",
+    "taxonomy-book-genre": "templates/taxonomy-book-genre.html"
+  },
+  "patterns": [
+    {
+      "name": "twentytwentyfive-child/other-books-list",
+      "file": "patterns/other-books-list.json"
+    }
+  ]
+}

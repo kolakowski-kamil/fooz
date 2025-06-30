@@ -18,10 +18,6 @@ wp-config-custom.php
 # WordPress media uploads
 wp-content/uploads/
 
-# Default WP themes
-# Comment out if you're using one of them
-wp-content/themes/twenty*/
-
 # Misc files added by WordPress
 license.txt
 readme.html

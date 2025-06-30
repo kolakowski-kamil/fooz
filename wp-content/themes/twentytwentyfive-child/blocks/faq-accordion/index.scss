@@ -1,0 +1,102 @@
+$f-aq-active-color: #e11d6d;
+$f-aq-duration: 0.4s;
+
+.faq-accordion-block {
+    margin: 2rem 0;
+
+    .faq-accordion-heading {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .faq-item {
+        &:not(:first-child) {
+            margin-top: 0.5rem;
+        }
+
+        .faq-question {
+            font-size: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 0.5rem 0;
+            transition-duration: $f-aq-duration;
+            cursor: pointer;
+            outline: none;
+
+            .faq-label {
+                display: flex;
+                align-items: center;
+
+                .faq-number {
+                    margin-right: 0.5rem;
+                    font-weight: bold;
+                }
+
+                .faq-text {
+
+                    text-align: left;
+                }
+            }
+
+            .faq-toggle {
+                display: flex;
+                align-items: center;
+                margin-left: .5rem;
+
+                .icon {
+                    font-size: 1.2rem;
+                    margin-left: 0.5rem;
+                    transition: transform $f-aq-duration ease;
+                }
+            }
+
+            &[aria-expanded="true"] {
+                color: $f-aq-active-color;
+
+                .faq-number,
+                .faq-text,
+                .icon {
+                    color: $f-aq-active-color;
+                }
+            }
+        }
+
+        .faq-answer {
+            font-size: 1rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height $f-aq-duration ease;
+            padding: 0;
+            margin: .25rem 1.25rem;
+        }
+    }
+
+    &[data-icon="plus_minus"] {
+        .icon-arrow {
+            display: none;
+        }
+
+        .icon-plus,
+        .icon-minus {
+            display: inline-block;
+        }
+    }
+
+    &[data-icon="up_down"] {
+
+        .icon-plus,
+        .icon-minus {
+            display: none;
+        }
+
+        .icon-arrow {
+            display: inline-block;
+            transform: rotate(45deg);
+        }
+    }
+}
