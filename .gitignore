@@ -1,0 +1,52 @@
+# Various development + environment artifacts
+.DS_Store
+node_modules/
+vendor/
+*.log
+.env
+
+# Sitemap files
+sitemap.xml
+sitemap.xml.gz
+
+# WP config file
+wp-config.php
+
+# Wire & Byte - extra configuration file
+wp-config-custom.php
+
+# WordPress media uploads
+wp-content/uploads/
+
+# Default WP themes
+# Comment out if you're using one of them
+wp-content/themes/twenty*/
+
+# Misc files added by WordPress
+license.txt
+readme.html
+wp-config-sample.php
+wp-content/upgrade/
+
+# Files from various caching implementations
+# Comment out if you need them in all environments
+wp-content/cache/
+wp-content/db.php
+wp-content/object-cache.php
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+
+# Files from the WordFence plugin
+wp-content/wflogs/
+wordfence-waf.php
+
+# Files from other plugins
+wp-content/*-wprbackups/
+wp-content/plugins/hello.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/wonolog/
+wp-content/plugins/bwp-minify/cache
+wp-content/ewww/*
+wp-content/files_mf/
