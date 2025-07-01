@@ -9,18 +9,11 @@ vendor/
 sitemap.xml
 sitemap.xml.gz
 
-# WP config file
-wp-config.php
-
-# Wire & Byte - extra configuration file
-wp-config-custom.php
-
 # WordPress media uploads
 wp-content/uploads/
 
 # Misc files added by WordPress
 license.txt
-readme.html
 wp-config-sample.php
 wp-content/upgrade/
 
